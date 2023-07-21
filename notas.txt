@@ -1,0 +1,11 @@
+nvm install 20 -> instala a versao 20 do nodejs
+nvm install --lts -> intala a versao long-term support (versao recomendada)
+nvl list -> lista as versoes instaladas do nodejs
+nvm use 18-> usa a versao 18 que ja deve estar instalada na maquina
+nvm alias default 18 -> define o nodejs padrao do sistema 
+
+criar o .nvmrc com a versao desejada e nvm user para ativar aquela versao
+
+node -v > .nvmrc -> salva a versao atual do projeto
+
+definir engine no package.json ->   "engines": { "node": "18" },
