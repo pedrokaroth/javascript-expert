@@ -1,0 +1,3 @@
+[x] Os arquivos devem possuir os headers: id, nome, profissao, idade
+[x] O arquivo nao pode estar vazio
+[x] O arquivo nao pode conter mais de 4 linhas
