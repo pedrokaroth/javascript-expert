@@ -1,0 +1,8 @@
+[x] Arquivo Service para fazer requisicoes para o endpoint https://swapi.dev usando o fetch para fazer requests com to json
+[x] Testar o metodo makeRequest para fazer requisicao para o endpoint
+[x] Salvar os mocks do retorno do planta 1 e planeta 2
+[x] Instalar o sinon@15.0.1 e usar o createSandbox para inicializar
+[x] a funcao getPlantes deve retornar name,surfaceWater,appeardIn
+[x] Testar retorno do planeta 1
+[x] Testar retorno do planeta 2
+
