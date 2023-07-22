@@ -1,0 +1,21 @@
+Fibonacci: o proximo numero da sequencia sera sempre a soma dos dois proximos numeros e o input sera o tamanho da sequencia
+input: 3
+0,1,1
+input: 5
+0,1,1,2,3
+input: 6
+0,1,1,2,3,5
+
+Sequencia 5 (O next vai ser sempre a do current + next da ultima execucao)
+[0] input = 5, current = 0, next = 1, result = 0 Primeira execucao comeca sempre com current 0 e next 1
+[1] input = 4, current = 1, next = 1, result = 1 -> current + next = 1 (Da primeira execucao)
+[2] input = 3, current = 1, next = 2, result = 1 -> current + next = 2 (Da segunda execucao)
+[3] input = 2, current = 2, next = 3, result = 2 -> current + next = 3 (Da terceira execucao)
+[4] input = 1, current = 3, next = 5, result = 3 -> current + next = 5 (Da quarta execucao)
+[5] input = 0 -> Finaliza
+
+[x] Configurar sandbox do sinon e usar o sinon.Spy para criar o objeto de teste
+[x] Criar a classe Fibonacci com um generator execute recursivo 
+[x] Verificar quantidade de chamdas para input 5
+[x] Verificar parametros recebidos na 2 execucao com spy.getCall(2)
+[x] Verificar os valores retornados com deepStrictEqual
