@@ -1,0 +1,57 @@
+handler (request, response)
+app = htpp.createServer(handler).listen(3000, () => console.log('teste'))
+
+esse app deve ser exportado do arquivo do api para rodar nos testes
+
+const routes = {
+  'get:exemplo': (request, response) => {
+    console.log('exemplo')
+  }
+}
+
+handler (request, response ) {
+  const { url, method } = response
+  const chosen = routes[method:url]
+  return chosen(request, response)
+}
+
+uma vez que requisicao receber um valor
+const data = await events.once(request, "data")
+
+StatusCode
+response.writeHead(401)
+Body
+response.end('teste')
+
+npx mocha -w (modo watch qualquer alteracao sera atualizada) *.test.js (qualquer coisa.test sera executada)
+
+let app
+before(done => {
+  app = require('app')
+  app.once('listening', done)
+})
+
+after(done => app.close(done))
+
+configurar regra de teste do nyc
+
+{
+  "branches": 100 -> Caminhos do codigo
+  "lines": 100 -> Linhas do codigo
+  "statements" 100 -> blocos do codigo
+  "checkCoverage": true
+  "reporter": ["html", "text"]
+} -> .nycrc.json
+
+rodar npx nyc npx mocha __test__/*.test.js para gerar o coverage
+
+[x] Criar um arquivo de api.js usando o http do nodejs
+[x] Criar rota /GET:contact deve retornar "entre em contato conosco e status 200"
+[x] Criar uma rota /POST:login curl -x POST '{"username": "pedrokaroth", "password":"1234"}' localhost:3000 
+[x] Deve existir uma rota de 404 
+[x] Instalar mocha para testes 10.2 e criar arquivo de teste dentro da pasta __test__
+[x] Instalar supertest 6.3.3
+[x] Testar rota de contato 
+[x] Testar rota de login com sucesso e falha
+[] Instalar nyc 15.1 para gerar o coverage do projeto
+[] Finalizar 100% de testes sobre o arquivo
